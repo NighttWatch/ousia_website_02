@@ -1,0 +1,46 @@
+@import "./abstract/mixins";
+
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17.4rem;
+    padding: 0 17.4rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+
+    &__title {
+        margin-top: 9.6rem;
+        text-transform: uppercase;        
+    }
+    &__subtitle {
+        margin-bottom: 2rem;
+    }
+
+    &__content-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 9.6rem 0;
+        gap: 15rem; 
+    }
+
+    &__image {
+        width: 15rem;
+        margin-bottom: 2rem;
+    }
+
+    &__description {
+        max-width: 40rem;
+
+    }
+
+    @include respond(tab-port) {
+        &__content {
+            display: flex;
+            flex-direction: column;    
+        }
+    }
+}

@@ -1,0 +1,79 @@
+@import "./abstract/mixins";
+
+.roadmap {
+    background-image: url("../../../public/images/roadmap_background.png");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__curved-line {
+        position: relative;
+        max-width: 150rem;
+    }
+
+    &__title {
+        margin-top: 9.6rem;
+        text-transform: uppercase;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;  
+        margin-top: 19.6rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+    }
+
+    &__item-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__item-title {
+        width: 23rem;
+
+    }
+
+    &__item-month {
+        text-transform: uppercase;
+
+    }
+
+    &__item-icon {
+        width: 3rem;
+        margin: 0 5px;
+    }
+
+    &__line-circle {
+        display: flex;
+        margin-top: 5px;
+        position: absolute;
+        gap: 20rem;
+    }
+
+    &__line-icon {   
+        width: 3rem;
+        z-index: 100;
+
+        &:first-child {
+            fill: #2ea4d7;
+        }
+    }
+
+    &__line {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 19.6rem;
+    }
+}

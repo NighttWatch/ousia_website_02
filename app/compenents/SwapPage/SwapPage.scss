@@ -1,0 +1,13 @@
+.swap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-primary);
+
+    &__title {
+        color: var(--color-white);
+        margin-bottom: 5rem;
+    }
+}

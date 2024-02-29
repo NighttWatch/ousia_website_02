@@ -1,0 +1,32 @@
+.subscribe {
+    margin: 13.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        margin-top: 4rem;
+    }
+
+    &__input {
+        margin-top: 2rem;
+        border-radius: 15rem;
+        width: 30%;
+        border-color: #fff;
+        &:focus {
+            color: #fff !important;
+            border-color: #fff;
+            width: 50%;
+        }
+    }
+
+    &__button {
+        margin-top: 2rem;
+        width: 30%;
+        padding: 5px;
+    }
+
+    &__logo {
+        width: 10rem;
+    }
+}

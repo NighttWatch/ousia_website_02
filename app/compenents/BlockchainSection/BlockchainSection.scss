@@ -1,0 +1,57 @@
+@import "./abstract/mixins";
+
+.blockchain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+
+    &__content {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        margin-top: 5rem;
+        color: var(--color-white);
+    }
+
+    &__icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 3rem 10rem 0 10rem;
+
+        border: 3px solid var(--color-black);
+        border-radius: 15rem;
+        width: 100%;
+        max-width: 10rem;
+        padding: 2rem;
+        height: 10rem;
+
+        background-image: linear-gradient(to top, var(--color-primary), var(--color-black-400));
+    }
+ 
+    &__icon {    
+        filter: brightness(0) invert(1);
+
+        &--eth {
+            width: 4rem;
+            fill: var(--color-white);
+        }
+    }
+
+    &__text {
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+        color: var(--color-white);
+    }
+}

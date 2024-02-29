@@ -1,0 +1,32 @@
+version: '3.9'
+services:
+  nginx:
+    build: ousia_nginx/
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes: 
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
+    depends_on: 
+      - client-dev
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
+  client-dev:
+    container_name: client-dev
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:80"
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+volumes:
+  conf:
+  www:

@@ -1,0 +1,37 @@
+.header {
+    padding: 2rem 4rem;
+    display: flex;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+
+    &__scroll {
+        background-color: var(--color-white-pure);
+        box-shadow: 0 0 30px 0 var(--color-black-100);
+    }
+
+    &__launch-app {
+        position: absolute;
+        top: 2rem;
+        right: 4rem;
+        padding: 8px 24px;
+    }
+}
+
+.logo {
+    width: 6rem;
+    margin-right: 9.6rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    width: 48rem;
+    padding-bottom: 0.5rem;
+
+    &__item {
+        margin-right: 4rem;
+    }
+}
+    

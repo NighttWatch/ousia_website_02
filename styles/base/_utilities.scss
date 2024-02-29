@@ -1,0 +1,42 @@
+//text
+.u-center-text { text-align: center !important; }
+.u-right-text { text-align: right !important; }
+.u-left-text { text-align: left !important; }
+.u-balance-text { text-wrap: balance !important; }
+
+
+//margin
+
+.u-margin-bottom-huge { margin-bottom: 9.6rem !important; }
+.u-margin-bottom-big { margin-bottom: 4.8rem !important; }
+.u-margin-bottom-medium { margin-bottom: 2.4rem !important; }
+.u-margin-bottom-small { margin-bottom: 1.2rem !important; }
+
+.u-margin-top-huge { margin-top: 9.6rem !important; }
+.u-margin-top-big { margin-top: 4.8rem !important; }
+.u-margin-top-4rem { margin-top: 4rem !important;}
+.u-margin-top-medium { margin-top: 2.4rem !important;}
+.u-margin-top-small { margin-top: 1.2rem !important;}
+
+//border-radius
+.u-border-radius-allside { border-radius: .8rem !important;}
+.u-border-radius-bottom { border-radius: 0 0 .8rem .8rem;}
+
+
+
+//line
+
+.u-line {
+    border: 1px solid var(--color-black-200);
+    border-bottom: none;
+    width: 100%;
+    max-width: 115rem;
+}
+
+.u-line-dashed {
+    border: 5px dashed var(--color-black);
+    border-bottom: none;
+    width: 100%;
+    max-width: 115rem;
+    z-index: 1;
+}

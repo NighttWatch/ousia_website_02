@@ -1,0 +1,42 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both; //clear float left and float right
+    }
+}
+// MEDIA QUERY MANAGER
+
+/*
+0 - 600px: phone
+600-900px: table potrait
+900-1200px: table landscape
+
+1200-1800 is where our normal styles are applied
+
+1800px +: bix desktop
+
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+
+// ORDER: Base +typography > general layout + grid > page layout > components
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) { @content }; //600px
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) { @content }; //900px
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) { @content }; //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) { @content }; //1800px
+    }
+}

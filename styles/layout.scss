@@ -1,0 +1,24 @@
+.container {
+    scroll-behavior: smooth;
+}
+
+.landing {
+    height: 100vh;
+    background-image: url("../public/images/ousia_background.png");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.loading {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    &__logo {
+        width: 40rem;
+        animation: bounce infinite linear;
+    }
+}

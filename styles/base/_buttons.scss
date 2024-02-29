@@ -1,0 +1,49 @@
+.contact-button-primary {
+    background-color: var(--color-primary);
+    padding: 0px 24px;
+    font-size: var(--default-font-size);
+    text-transform: capitalize;
+
+    &:hover {
+        background-color: var(--color-primary-hover);
+    }
+
+    &:active {
+        background-color: var(--color-primary-pressed);
+    }
+}
+
+.contact-button-white {
+    background-color: var(--color-white);
+    width: 25.2rem;
+    padding: 0px 24px;
+    font-size: var(--default-font-size);
+    color: var(--color-black);
+    text-transform: capitalize;
+
+    &:hover {
+        background-color: var(--color-black-50);
+    }
+
+    &:active {
+        background-color: var(--color-black-100);
+    }
+}
+
+.buy-service-button {
+    background-color: var(--color-primary);
+    width: 30.7rem;
+    height: 5.8rem;
+    padding: 1.6rem;
+    font-size: var(--default-font-size);
+    border-radius: 2.9rem;
+    
+
+    &:hover {
+        background-color: var(--color-primary-hover);
+    }
+
+    &:active {
+        background-color: var(--color-primary-pressed);
+    }
+}

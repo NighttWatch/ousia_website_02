@@ -1,0 +1,23 @@
+.footer {
+    padding: 2.4rem 12rem 6rem 12rem;
+    background-color: var(--color-black-900);
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        
+    }
+
+    &__right {
+
+    }
+
+    &__term {
+        text-decoration: none;
+        margin-right: 5.6rem;
+    }
+
+    &__privacy {
+        text-decoration: none;
+    }
+}
