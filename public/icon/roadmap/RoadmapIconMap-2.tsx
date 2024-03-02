@@ -6,9 +6,6 @@ export default (props: SVGProps<SVGSVGElement>) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlSpace="preserve"
-        style={{
-        enableBackground: "new 0 0 100 100",
-        }}
         viewBox="0 0 100 125"
         {...props}
     >
