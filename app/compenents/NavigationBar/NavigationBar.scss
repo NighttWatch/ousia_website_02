@@ -17,7 +17,11 @@
     }
 
     &__launch-app {
-        padding: 1rem 4.5rem;
+        
+
+        @include respond(phone) {
+            padding: 1rem 2.5rem;
+        }
     }
 }
 
