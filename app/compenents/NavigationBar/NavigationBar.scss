@@ -1,3 +1,5 @@
+@import "./abstract/mixins";
+
 .header {
     padding: 2rem 4rem;
     display: flex;
@@ -15,12 +17,20 @@
         top: 2rem;
         right: 4rem;
         padding: 8px 24px;
+
+        @include respond(phone) {
+            padding: 4px 10px;
+            top: 2.5rem;
+        }
     }
 }
 
 .logo {
     width: 6rem;
-    margin-right: 9.6rem;
+    margin-right: 4.8rem;
+    @include respond(phone) {
+        margin-right: 4rem;
+    }
 }
 
 .navbar {
@@ -32,6 +42,10 @@
 
     &__item {
         margin-right: 4rem;
+
+        @include respond(phone) {
+            margin-right: 2rem;
+        }
     }
 }
     

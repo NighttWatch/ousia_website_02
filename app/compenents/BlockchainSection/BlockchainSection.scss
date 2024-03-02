@@ -37,6 +37,10 @@
         padding: 2rem;
         height: 10rem;
 
+        @include respond(phone) {
+            margin: 3rem 5rem 0 5rem;
+        }
+
         background-image: linear-gradient(to top, var(--color-primary), var(--color-black-400));
 
         &:hover {

@@ -14,9 +14,5 @@
     position: relative;
     height: 100vh;
     margin-top: -9rem;
-
-    @include respond(phone) {
-        padding: 0 10rem 0 10rem;
-        height: 75vh;
-    }
+    padding: 0 10rem 0 10rem;
 }

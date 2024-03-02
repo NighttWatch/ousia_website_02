@@ -15,14 +15,10 @@
         border-radius: 15rem;
         width: 40%;
         border-color: #fff;
-        &:focus {
-            color: #fff !important;
-            border-color: #fff;
-            width: 50%;
-        }
+        font-size: 30px;
 
         @include respond(tab-port) {
-            width: 50%;        
+            width: 60%;        
         }    
 
         
@@ -34,7 +30,7 @@
         padding: 5px;
         margin-bottom: 5rem;
         @include respond(tab-port) {
-            width: 50%;        
+            width: 60%;        
         }   
     }
 
