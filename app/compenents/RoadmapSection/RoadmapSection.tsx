@@ -24,7 +24,7 @@ const roadmap_list = [{
     year: 2024,
     number: 2,
     positionMobile: 'right',
-    classMobile: ""
+    classMobile: "u-margin-top-small"
 },
 {
     title: "Launching Trading Mobile Application - V1 Alpha",

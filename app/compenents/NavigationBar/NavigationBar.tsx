@@ -24,18 +24,25 @@ export default function NavigationBar() {
 
     return (
         <header className={`header ${scrolling ? "header__scroll" : ""}`}>
-            <Link href="#" scroll={false}>
-                <img className="logo" src='/branding/logo/ousia_logo_short.png' alt='ousia logo'/>
-            </Link>
             <nav className="navbar">
+                <Link href="#" scroll={false}>
+                    <img className="logo" src='/branding/logo/ousia_logo_short.png' alt='ousia logo'/>
+                </Link>
+                <Link href="#service" className="navbar__item heading-nav" scroll={false}>
+                    What is Ousia?
+                </Link>
                 <Link href="#roadmap" className="navbar__item heading-nav" scroll={false}>
                     Roadmap
                 </Link>
                 <Link href="#subscribe" className="navbar__item heading-nav" scroll={false}>
                     Subscribe
                 </Link>
+                
             </nav>
-            <Button className="header__launch-app contact-button-primary" variant='contained' href='/swap'>Launch App</Button>
+            <div className="buttonbar">
+                <Button className="header__launch-app contact-button-primary" variant='contained' href='/swap'>Launch App</Button>
+            </div>
+            
         </header>
     );
   }

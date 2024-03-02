@@ -13,6 +13,17 @@
     background-position: top;
     position: relative;
     height: 100vh;
-    margin-top: -9rem;
+    margin-top: -10rem;
     padding: 0 10rem 0 10rem;
+
+    &__title {
+        @include respond(phone) {
+            font-size: 4rem;
+        }
+    }  
+    &__subtitle {
+        @include respond(phone) {
+            font-size: 2rem;
+        }
+    }     
 }

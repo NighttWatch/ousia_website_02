@@ -4,7 +4,7 @@ import './ServiceSection.scss';
 
 export default function ServiceSection() {
     return (
-        <div className="service" id='package'>
+        <div className="service" id='service'>
             <h1 className="service__title heading-secondary--main u-center-text">What is Ousia?</h1>
             <div className='service__content-box'>
                 <div className="service__content u-center-text">
