@@ -9,37 +9,79 @@
     flex-direction: column;
     align-items: center;
 
-    &__curved-line {
-        position: relative;
-        max-width: 150rem;
+    @include respond(tab-land) {
+        padding: 0 10rem;
     }
 
     &__title {
-        margin-top: 9.6rem;
+        margin-top: 13.4rem;
         text-transform: uppercase;
+
+        @include respond(tab-land) {
+            margin-top: 2rem;
+        }  
     }
 
     &__box {
         display: flex;
         flex-direction: row;  
-        margin-top: 19.6rem;
+        margin-top: 5rem;
+        
+        @include respond(tab-land) {
+            flex-direction: column;
+            margin-top: 2rem;            
+        }     
     }
 
     &__item {
         display: flex;
         flex-direction: column;  
         align-items: center;
+
+
+        @include respond(tab-land) {   
+            margin-bottom: 7rem;
+        }    
+
+        &--right {
+            @include respond(tab-land) {
+                margin-left: 23rem;
+                
+            }    
+            
+        }
+
+        &--left {
+            @include respond(tab-land) {
+                margin-right: 23rem;
+            }  
+        }
+    }
+
+    &__line {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 19.6rem;
     }
 
     &__item-box {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: center;  
+        @include respond(tab-land) {
+            margin-top: -1.5rem;
+        } 
     }
 
     &__item-title {
         width: 23rem;
-
+        height: 6rem;
+        @include respond(tab-land) {
+            width: 20rem;
+        }
     }
 
     &__item-month {
@@ -57,23 +99,25 @@
         margin-top: 5px;
         position: absolute;
         gap: 20rem;
+
+        @include respond(tab-land) {
+            gap: 12rem;
+            flex-direction: column;
+            top: 15rem;
+            margin-right: 4px;
+        }
     }
 
     &__line-icon {   
         width: 3rem;
-        z-index: 100;
+        z-index: 99;
 
         &:first-child {
             fill: #2ea4d7;
         }
     }
 
-    &__line {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 1rem;
-        margin-bottom: 19.6rem;
+    &__vertical {
+        margin-top: 18rem;
     }
 }

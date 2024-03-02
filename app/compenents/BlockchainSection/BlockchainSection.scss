@@ -38,6 +38,20 @@
         height: 10rem;
 
         background-image: linear-gradient(to top, var(--color-primary), var(--color-black-400));
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        &--poly:hover {
+            background-image: radial-gradient(#8345E6, var(--color-black-400))
+        }
+        &--eth:hover {
+            background-image: radial-gradient(#141414, var(--color-black-400))
+        }
+        &--sol:hover {
+            background-image: linear-gradient(to top, #6574D8, #0EC496);
+        }
     }
  
     &__icon {    

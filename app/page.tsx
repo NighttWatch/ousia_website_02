@@ -14,7 +14,7 @@ import BlockchainSection from './compenents/BlockchainSection/BlockchainSection'
 export default async function Home() {
 
   return (
-    <main className="container landing">
+    <main className="container">
       <NavigationBar/>
       <EntranceSection/>
       <ServiceSection/>

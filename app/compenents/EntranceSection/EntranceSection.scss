@@ -7,10 +7,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 15rem;
-    margin-bottom: 30rem;
+
+    background-image: url("../../../public/images/ousia_background.png");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 100vh;
+    margin-top: -9rem;
 
     @include respond(phone) {
         padding: 0 10rem 0 10rem;
+        height: 75vh;
     }
 }

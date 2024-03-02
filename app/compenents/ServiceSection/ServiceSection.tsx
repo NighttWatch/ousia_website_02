@@ -13,12 +13,12 @@ export default function ServiceSection() {
                     <p className="service__description heading-primary--sub-500">OUSIA enables lightning-fast conversions between cryptocurrencies on different networks. Convert any coin from Ethereum to Solana, Polygon to Solana, or Solana to Ethereum in seconds</p>
                 </div>
                 <div className="service__content u-center-text">
-                    <img className="service__image" src='/images/service/swap.png' alt='swap' />
+                    <img className="service__image u-margin-top-medium u-margin-bottom-medium" src='/images/service/finance.png' alt='finance' />
                     <h1 className="service__subtitle heading-primary--sub u-center-text">Finance</h1>
                     <p className="service__description heading-primary--sub-500">The mission of OUSIA is to merge traditional investment platforms with the future of the financial system, blockchain</p>
                 </div>
                 <div className="service__content u-center-text">
-                    <img className="service__image" src='/images/service/swap.png' alt='swap' />
+                    <img className="service__image u-margin-top-medium u-margin-bottom-medium" src='/images/service/portfolio.png' alt='portfolio' />
                     <h1 className="service__subtitle heading-primary--sub u-center-text">Portfolio</h1>
                     <p className="service__description heading-primary--sub-500">OUSIA will offer varaity of data to users to perfect their invesments</p>
                 </div>

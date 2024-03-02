@@ -1,5 +1,7 @@
+@import "./abstract/mixins";
+
 .subscribe {
-    margin: 13.4rem;
+    margin: 14.4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,19 +13,29 @@
     &__input {
         margin-top: 2rem;
         border-radius: 15rem;
-        width: 30%;
+        width: 40%;
         border-color: #fff;
         &:focus {
             color: #fff !important;
             border-color: #fff;
             width: 50%;
         }
+
+        @include respond(tab-port) {
+            width: 50%;        
+        }    
+
+        
     }
 
     &__button {
         margin-top: 2rem;
-        width: 30%;
+        width: 40%;
         padding: 5px;
+        margin-bottom: 5rem;
+        @include respond(tab-port) {
+            width: 50%;        
+        }   
     }
 
     &__logo {
