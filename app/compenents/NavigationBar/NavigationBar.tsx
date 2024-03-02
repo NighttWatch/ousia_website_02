@@ -29,7 +29,7 @@ export default function NavigationBar() {
                     <img className="logo" src='/branding/logo/ousia_logo_short.png' alt='ousia logo'/>
                 </Link>
                 <Link href="#service" className="navbar__item heading-nav" scroll={false}>
-                    What is Ousia?
+                    About
                 </Link>
                 <Link href="#roadmap" className="navbar__item heading-nav" scroll={false}>
                     Roadmap
