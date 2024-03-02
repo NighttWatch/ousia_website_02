@@ -18,7 +18,7 @@
         font-size: 30px;
 
         @include respond(tab-port) {
-            width: 60%;        
+            width: 80%;  
         }    
 
         
@@ -30,7 +30,7 @@
         padding: 5px;
         margin-bottom: 5rem;
         @include respond(tab-port) {
-            width: 60%;        
+            width: 80%;              
         }   
     }
 

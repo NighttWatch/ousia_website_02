@@ -60,7 +60,7 @@ const roadmap_list = [{
     year: 2024,
     number: 6,
     positionMobile: 'right',
-    classMobile: ""
+    classMobile: "u-margin-top-small"
 }];
 
 
